@@ -100,7 +100,7 @@ td.arg code { white-space: nowrap; }
   z-index: -1;
   opacity: 0;
   filter: blur(5px);
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background: linear-gradient(45deg, #00ffd5, #002bff, #7a00ff, #ff00c8,  #7a00ff, #002bff, #00ffd5);
   background-size: 400%;
   transition: opacity .3s ease-in-out;
   animation: animate 20s linear infinite;
@@ -116,9 +116,7 @@ td.arg code { white-space: nowrap; }
 .e-btn:hover:before {
   opacity: 1
 }
-.e-btn:hover:active {
-  background: none;
-}
+
 @keyframes animate { 0% { background-position: 0 0; } 50% { background-position: 400% 0; } 100% { background-position: 0 0; } }
 /*
  * Tagline
