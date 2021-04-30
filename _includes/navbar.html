@@ -86,7 +86,7 @@
         </li>
       </ul>
 
-      <ul class="nav navbar-nav navbar-right visible-lg-block">
+      <ul class="nav navbar-nav navbar-right hidden-sm">
         <li>
           {% if page.collection %}
             <a href="{{ site.repository.doc }}/edit/master/{{ page.path }}" data-proofer-ignore>
@@ -94,7 +94,8 @@
             <span>Edit Page</span>
             </a>
           {% else %}
-            <a href="//twitter.com/MarlinFirmware" class="twitter-follow-button" data-show-count="false">Follow @MarlinFirmware</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a class="btn btn-follow btn-block btn-sm" href="//twitter.com/MarlinFirmware" role="button">
+              <span class="btn-text"><em class="fa fa-twitter fa-1x" aria-hidden="true"></em>&nbsp; Follow @MarlinFirmware</span></a>
           {% endif %}
         </li>
       </ul>
@@ -103,17 +104,34 @@
   </div>
 </nav>
 <!-- /navbar -->
-<div class="custom-btn">
-  <div class="row">
-      <a class="btn btn-success e-btn btn-block btn-lg" href="{{ '/docs/basics/introduction.html' }}" role="button">
-      <span class="e-btn-text"><em class="fa fa-book fa-1x" aria-hidden="true"></em>&nbsp; Learn more</span></a>
+{% if page.collection %}
+  <div class="custom-btn">
+    <div class="row hidden-md hidden-lg hidden-xl">
+        <a class="btn btn-edit e-btn btn-block btn-lg" href="{{ site.repository.doc }}/edit/master/{{ page.path }}" data-proofer-ignore role="button">
+        <span class="e-btn-text"><em class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></em>&nbsp; Edit Page</span></a>
+    </div>
+    <div class="row">
+        <a class="btn btn-learn e-btn btn-block btn-lg" href="{{ '/docs/basics/introduction.html' }}" role="button">
+        <span class="e-btn-text"><em class="fa fa-book fa-1x" aria-hidden="true"></em>&nbsp; Learn more</span></a>
+    </div>
+    <div class="row">
+        <a class="btn btn-contribute e-btn btn-block btn-lg" href="{{ '/docs/development/contributing.html' }}" role="button">
+        <span class="e-btn-text"><em class="fa fa-users fa-1x" aria-hidden="true"></em>&nbsp; Contribute</span></a>
+    </div>
+    <div class="row">
+        <a class="btn btn-download e-btn btn-block btn-lg" href="{{ '/meta/download/' }}" role="button">
+        <span class="e-btn-text"><em class="fa fa-download fa-1x" aria-hidden="true"></em>&nbsp; Download</span></a>
+    </div>
+    <div class="row">
+        <a class="btn btn-follow e-btn btn-block btn-lg" href="//twitter.com/MarlinFirmware" role="button">
+        <span class="e-btn-text"><em class="fa fa-twitter fa-1x" aria-hidden="true"></em>&nbsp; Follow @MarlinFirmware</span></a>
+    </div>
   </div>
-  <div class="row">
-      <a class="btn btn-primary e-btn btn-block btn-lg" href="{{ '/docs/development/contributing.html' }}" role="button">
-      <span class="e-btn-text"><em class="fa fa-user fa-1x" aria-hidden="true"></em>&nbsp; Contribute</span></a>
+{% else %}
+  <div class="custom-btn hidden-md hidden-lg hidden-xl">
+    <div class="row ">
+      <a class="btn btn-follow e-btn btn-block btn-lg" href="//twitter.com/MarlinFirmware" role="button">
+        <span class="e-btn-text"><em class="fa fa-twitter fa-1x" aria-hidden="true"></em>&nbsp; Follow @MarlinFirmware</span></a>
+    </div>
   </div>
-  <div class="row">
-      <a class="btn btn-info e-btn btn-block btn-lg" href="{{ '/meta/download/' }}" role="button">
-      <span class="e-btn-text"><em class="fa fa-download fa-1x" aria-hidden="true"></em>&nbsp; Download</span></a>
-  </div>
-</div>
+{% endif %}
