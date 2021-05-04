@@ -125,13 +125,24 @@ $(function() {
 
   // Resize image to fit panel
   function resizeImage() {
+    var w = $(window).width(), maxw = maxWindowWidth + 100;
     $('.custom-article img').each(function() {
       var $t = $(this);
       if ($t.width() >= 600) {
-        var w = $(window).width(), maxw = maxWindowWidth + 100;
         $(this).css('width', w >= maxw ? '840px' : w >= minWindowWidth ? '90%' : '690px');
       }
     });
+    if (w <= 991) {
+      $('.mfw-bg').css('position', 'absolute');
+      var rightShift = 520;
+      $('.mfw-bg').css('right', rightShift + 'px');
+      $('#mfw-logo').addClass('mfw-bg');
+    }
+    else {
+      $('.mfw-bg').css('position', 'relative');
+      $('#mfw-logo').removeClass('mfw-bg');
+      $('#mfw-logo').css('right', 0 );
+    }
   }
 
   function shiftSubMenu() {
