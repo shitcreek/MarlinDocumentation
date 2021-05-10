@@ -4,10 +4,8 @@
   --bg-red: red;
   --bg-grey: grey;
   --bg-midsection: radial-gradient(circle, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0) 60%, rgba(0,0,0, 0) 100%);
-
   --color-background: #fff;
   --color-color: #000;
-
   --color-article-header: black;
   --color-article-border: #888;
   --color-bitmap: #118;
@@ -32,7 +30,6 @@
   --color-dropdown-a-hover: #C6DBFB;
   --color-dropdown-a-hover-bg: #f5f5f5;
   --color-dropdown-bg: #fff;
-
   --color-features: black;
   --color-features-body: black;
   --color-features-bg: rgba(255,255,255,0.8);
@@ -40,8 +37,6 @@
   --color-features-hover: white;
   --color-features-body-hover: grey;
   --color-features-image-bg: rgba(3,3,3,0.8); 
-
-
   --color-gcode-header-bg: #200;
   --color-gcode-h5-bg: #CCC;
   --color-gcode-h5-code: #FF9;
@@ -51,7 +46,6 @@
   --color-gcode-usage-hover-bg: #FFFD90;
   --color-gcode-examples-bg: #E9F5FF;
   --color-gcode-gallery: #601;
-
   --color-h1-gcode: #B88;
   --color-h1-basic: #8B8;
   --color-h1-feat: #8BB;
@@ -65,8 +59,6 @@
   --color-highlight-bg: #CCC;
   --color-highlighter-rouge: #C99;
   --color-highlighter-rouge-bg: #000;
-
-
   --color-iframe-border: #444;
   --color-iframe-search: #FFF;
   --color-iframe-search-bg: #111;
@@ -81,7 +73,6 @@
   --color-item-bg: #F8F8FF;
   --color-item-code-bg: #E0E0F0;
   --color-item-post: #EAEAFC;
-
   --color-jumbo: #000;
   --color-jumbo-bg: #eee;
   --color-jumbo-h1: #000;
@@ -92,7 +83,6 @@
   --color-jumbo-td-td: white;
   --color-jumbo-strong: red;
   --color-jumbo-h2-bg: transparent;
-
   --color-lcd-th-bg: #DDD;
   --color-lcd-td-bg: #0639FF;
   --color-lcd-td-border: #000;
@@ -108,8 +98,6 @@
   --color-list-group-item-a: #CCC;
   --color-link: #0088CC;
   --color-link-hover: #8492fd;
-
-  
   --color-nav: #AA0;
   --color-nav-bg: #334;
   --color-nav-list: #09B;
@@ -122,7 +110,6 @@
   --color-navlist: #FFF;
   --color-navbar-hover: #333;
   --color-navbar-hover-bg: #EEE;
-
   --color-panel: white;
   --color-panel-bg: rgba(255,255,255,0.5);
   --color-panel-outer-bg: rgba(0,0,0,0.4);
@@ -144,7 +131,6 @@
   --color-post-bg: #EEE;
   --color-pre: #000;
   --color-pre-bg:#fff;
-
   --color-primary: #CCC;
   --color-primary-bg: #333;
   --color-primary-border: #EEE;
@@ -161,13 +147,9 @@
   --color-danger-border: #E11;
   --color-danger-code: #F00;
   --color-danger-code-bg: #C228;
-  
   --color-required: yellow;
-  
   --color-search-border: #666;
   --color-search: #111;
-
-  
   --color-table-striped-bg: #EEE;
   --color-tagline: #111;
   --color-tagline-bg: white;
@@ -177,7 +159,6 @@
   --color-table: white;
   --color-table-bg: #DDD;
   --color-toc-border: #EEE;
-
 }
 /* Variable decleration for dark mode */
 [data-theme="dark"] {
@@ -185,10 +166,8 @@
   --bg-red: #FDD;
   --bg-grey: #333;
   --bg-midsection: radial-gradient(circle, rgba(255,255,255, 1) 0%, rgba(255,255,255, 0) 60%, rgba(255,255,255, 0) 100%);
-
   --color-background: #000;
   --color-color: #B5B5B5;
-
   --color-article-header: white;
   --color-article-border: #888;
   --color-bitmap: #CCF;
@@ -213,7 +192,6 @@
   --color-dropdown-a-hover: #C6DBFB;
   --color-dropdown-a-hover-bg: #3A633F;
   --color-dropdown-bg: #255;
-
   --color-features: white;
   --color-features-body: black;
   --color-features-bg: rgba(3,3,3,0.5);
@@ -261,7 +239,6 @@
   --color-item-bg: #333;
   --color-item-code-bg: #E0E0F0;
   --color-item-post: #EAEAFC;
-
   --color-jumbo: #FFF;
   --color-jumbo-bg: #202;
   --color-jumbo-h1: #F80;
@@ -272,7 +249,6 @@
   --color-jumbo-td-td: #201;
   --color-jumbo-strong: #FE4;
   --color-jumbo-h2-bg: transparent;
-
   --color-lcd-th-bg: #DDD;
   --color-lcd-td-bg: #0639FF;
   --color-lcd-td-border: #000;
@@ -288,10 +264,8 @@
   --color-list-group-item-a: #CCC;
   --color-link: #C7254E;
   --color-link-hover: #8492fd;
-  
   --color-nav: #AA0;
   --color-nav-bg: #334;
-  --color-navbar-brand-hover: 
   --color-nav-list: #09B;
   --color-navbar-default: #ACF;
   --color-navbar-default-bg: #3A633F;
@@ -302,8 +276,6 @@
   --color-navlist: #FFF;
   --color-navbar-hover: #AAA;
   --color-navbar-hover-bg: #333;
-
-
   --color-panel: white;
   --color-panel-bg: rgba(255,255,255,0.5);
   --color-panel-outer-bg: rgba(255,255,255,0.6);
@@ -325,7 +297,6 @@
   --color-post-bg: #556;
   --color-pre: #CCC;
   --color-pre-bg:#000;
-
   --color-primary: #333;
   --color-primary-bg: #CCC;
   --color-primary-border: #EEE;
@@ -342,13 +313,9 @@
   --color-danger-border: #E11;
   --color-danger-code: #F00;
   --color-danger-code-bg: #C228;
-  
   --color-required: yellow;
-  
   --color-search-border: #666;
   --color-search: #A00;
-
-  
   --color-table-striped-bg: #333;
   --color-tagline: #EEE;
   --color-tagline-bg: #000;
