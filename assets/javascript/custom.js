@@ -28,7 +28,13 @@ function getCookie(cname) {
 function setDarkMode(dark) {
   console.log((dark ? "Setting" :  "Clearing") + " dark mode.");
   var $b = $('body'), q = '/assets/images/', p = q + 'logo/marlin/';
-  if (dark) $b.addClass('night'); else $b.removeClass('night');
+  // if (dark) $b.addClass('night'); else $b.removeClass('night');
+  if (dark) {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+  else {
+    document.documentElement.removeAttribute("data-theme");
+  }
   $('#mflogo').attr('src', p + 'text-' + (dark ? 'night' : 'day') + '.png');
   $('#daynite')
     .attr('src', q + 'btn-' + (dark ? 'day' : 'night') + '.svg')
@@ -36,7 +42,8 @@ function setDarkMode(dark) {
 }
 
 function toggleDarkMode() {
-  var dark = !$('body').hasClass('night');
+  // var dark = !$('body').hasClass('night');
+  var dark = !document.documentElement.hasAttribute("data-theme");
   setDarkMode(dark);
   return dark;
 }
