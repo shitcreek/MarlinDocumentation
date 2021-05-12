@@ -2,11 +2,11 @@
  * _custom.scss for marlinfw.org
  */
 :root  {
-  --bg-white: #fff;
+  --bg-white: #FFF;
   --bg-red: red;
   --bg-grey: grey;
   --bg-midsection: radial-gradient(circle, rgba(0,0,0, 1) 0%, rgba(0,0,0, 0) 60%, rgba(0,0,0, 0) 100%);
-  --color-background: #fff;
+  --color-background: #FFF;
   --color-color: #000;
   --color-article-header: black;
   --color-article-border: #888;
@@ -30,15 +30,15 @@
   --color-dropdown: #262626;
   --color-dropdown-a: #262626;
   --color-dropdown-a-hover: #C6DBFB;
-  --color-dropdown-a-hover-bg: #f5f5f5;
-  --color-dropdown-bg: #fff;
+  --color-dropdown-a-hover-bg: #F5F5F5;
+  --color-dropdown-bg: #FFF;
   --color-features: black;
   --color-features-body: black;
   --color-features-bg: rgba(255,255,255,0.8);
   --color-features-hover-bg: rgba(255,255,255,0.8);
   --color-features-hover: white;
   --color-features-body-hover: grey;
-  --color-features-image-bg: rgba(3,3,3,0.8); 
+  --color-features-image-bg: rgba(3,3,3,0.8);
   --color-gcode-header-bg: #200;
   --color-gcode-h5-bg: #CCC;
   --color-gcode-h5-code: #FF9;
@@ -54,9 +54,9 @@
   --color-h1-hardward: #88B;
   --color-h1-devel: #BB8;
   --color-h1-config: #B8B;
-  --color-header: #aecafa;
+  --color-header: #AECAFA;
   --color-header-bg: #0088CC;
-  --color-header-text: #0e218d;
+  --color-header-text: #0E218D;
   --color-hr: #333;
   --color-highlight-bg: #CCC;
   --color-highlighter-rouge: #C99;
@@ -76,10 +76,10 @@
   --color-item-code-bg: #E0E0F0;
   --color-item-post: #EAEAFC;
   --color-jumbo: #000;
-  --color-jumbo-bg: #eee;
+  --color-jumbo-bg: #EEE;
   --color-jumbo-h1: #000;
-  --color-jumbo-table-bg: #fff;
-  --color-jumbo-th-bg: #ddd;
+  --color-jumbo-table-bg: #FFF;
+  --color-jumbo-th-bg: #DDD;
   --color-jumbo-th-td: black;
   --color-jumbo-th-th: #EEE;
   --color-jumbo-td-td: white;
@@ -99,15 +99,15 @@
   --color-list-group-item-bg: #000;
   --color-list-group-item-a: #CCC;
   --color-link: #0088CC;
-  --color-link-hover: #8492fd;
+  --color-link-hover: #8492FD;
   --color-nav: #AA0;
   --color-nav-bg: #334;
   --color-nav-list: #09B;
   --color-navbar-default: #777;
   --color-navbar-default-bg: #3A633F;
-  --color-navbar-bg: #fff;
+  --color-navbar-bg: #FFF;
   --color-navbar-border: #222;
-  --color-navbar-li: #fff;
+  --color-navbar-li: #FFF;
   --color-navbar-li-bg: #0088CC;
   --color-navlist: #FFF;
   --color-navbar-hover: #333;
@@ -136,9 +136,9 @@
   --color-primary: #CCC;
   --color-primary-bg: #333;
   --color-primary-border: #EEE;
-  --color-info: #31708f;
-  --color-info-bg: #d9edf7;
-  --color-info-border: #bce8f1;
+  --color-info: #31708F;
+  --color-info-bg: #D9EDF7;
+  --color-info-border: #BCE8F1;
   --color-warning: #C58A03;
   --color-warning-border: #FF0;
   --color-warning-bg: #EE9;
@@ -186,8 +186,8 @@
   --color-bitmap-selector-label: #FDD;
   --color-bitmap-err-box: red;
   --color-calibpat-header: #FFF;
-  --color-code: #c7254e;
-  --color-code-bg: #ffe2eb;
+  --color-code: #C7254E;
+  --color-code-bg: #FFE2EB;
   --color-data-search: #FFF;
   --color-data-search-bg: #BBB;
   --color-dropdown: #333;
@@ -201,7 +201,7 @@
   --color-features-hover-bg: rgba(255,255,255,0.8);
   --color-features-hover: grey;
   --color-features-body-hover: grey;
-  --color-features-image-bg: rgba(3,3,3,0.8); 
+  --color-features-image-bg: rgba(3,3,3,0.8);
 
   --color-gcode-header-bg: #000;
   --color-gcode-h5-bg: #222;
@@ -219,10 +219,10 @@
   --color-h1-hardward: #88B;
   --color-h1-devel: #BB8;
   --color-h1-config: #B8B;
-  --color-header: #aecafa;
+  --color-header: #AECAFA;
   --color-header-bg: rgba(255,255,255,0.5);
-  --color-header-text: #0e218d;
-  --color-hr: #fff;
+  --color-header-text: #0E218D;
+  --color-hr: #FFF;
   --color-highlight-bg: #444;
   --color-highlighter-rouge: #C99;
   --color-highlighter-rouge-bg: #000;
@@ -265,7 +265,7 @@
   --color-list-group-item-bg: #000;
   --color-list-group-item-a: #CCC;
   --color-link: #C7254E;
-  --color-link-hover: #8492fd;
+  --color-link-hover: #8492FD;
   --color-nav: #AA0;
   --color-nav-bg: #334;
   --color-nav-list: #09B;
@@ -361,7 +361,7 @@ pre, pre>code { color: var(--color-pre); background-color: var(--color-pre-bg); 
 .custom-tagline {
   color: var(--color-tagline); background-color: var(--color-tagline-bg);
   h1 { color: var(--color-tagline-header); } }
-  #tagline { color: var(--color-tagline-id); }  
+  #tagline { color: var(--color-tagline-id); }
 .custom-tagline-btn a { color: var(--color-tagline-btn); }
 hr.custom-hr {
 color: var(--color-hr);
@@ -405,7 +405,7 @@ border-image: linear-gradient(
 a.panel-wrapper:hover, a.panel-wrapper:active {
   .panel-heading, a.panel-heading {
     h1, h2, h3, h4 { color: var(--color-panel-wrapper-link);}
-  } 
+  }
 }
 .post { background-color: var(--color-post-bg); }
 [data-search-results]>h1 { color: var(--color-data-search); background: var(--color-data-search-bg); }
@@ -752,7 +752,7 @@ div.highlight { margin-bottom: 25px; }
   h3, h4, h5, h6 {
     margin-top: 1em;
     margin-left: 0.25em;
-    color: white; 
+    color: white;
   }
 }
 .calibpat {
@@ -801,7 +801,7 @@ img.card-img-top {
 width: 100%;
 }
 .e-btn {
-  color: white; 
+  color: white;
   padding-left: 10px;
   padding-right: 20px;
   margin-bottom: 4px;
@@ -832,7 +832,7 @@ width: 100%;
 .e-btn-text{
   display: block;
   white-space: nowrap;
-  color: white; 
+  color: white;
 }
 .e-btn:hover {
   max-width: 280px
@@ -884,7 +884,7 @@ white-space: nowrap;
  * Contribute Button
  */
  .btn-download {
-  background: #5bc0de;
+  background: #5BC0DE;
 }
 /*
  * Learn More Button
