@@ -38,7 +38,7 @@ function Pathformer(element) {
       throw new Error('Pathformer [constructor]: "element" parameter is not related to an existing ID');
     }
   }
-  if (element instanceof window.SVGElement || 
+  if (element instanceof window.SVGElement ||
       element instanceof window.SVGGElement ||
       /^svg$/i.test(element.nodeName)) {
     this.el = element;
@@ -235,7 +235,7 @@ Pathformer.prototype.circleToPath = function (element) {
       startY = cy,
       endX = parseFloat(cx) + parseFloat(r),
       endY = cy;
-      
+
   newElement.d =  'M' + startX + ',' + startY +
                   'A' + r + ',' + r + ' 0,1,1 ' + endX + ',' + endY +
                   'A' + r + ',' + r + ' 0,1,1 ' + startX + ',' + endY;
@@ -749,7 +749,7 @@ Vivus.prototype.recalc = function () {
 
 /**
  * Private method to re-evaluate line length on non-scaling
- * path elements. Then call for a trace to update the SVG. 
+ * path elements. Then call for a trace to update the SVG.
  */
 Vivus.prototype.performLineRecalc = function () {
   var pathObj, path, rect, box, scale;
