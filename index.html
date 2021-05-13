@@ -152,30 +152,7 @@ category:     [ default ]
     "A really good 3D printer driver",
     "Motors & heaters & sensors, oh my!",
     "Stepper Motor Repurposer"
-  ];
-
-  // Animate and randomize taglines
-  var tagline = previousLine = taglines[Math.floor(Math.random()*taglines.length)];
-  function customTagline() {
-    $( "#tagline" ).animate({
-      opacity: 0,
-      marginLeft: "+=20"
-    }, 250, function()
-    {
-      // Animation complete
-      while (tagline == previousLine){
-        tagline = taglines[Math.floor(Math.random()*taglines.length)];
-      }
-      document.getElementById('tagline').innerText = tagline;
-      previousLine = tagline;
-      $( "#tagline" ).animate({
-        opacity: 1,
-        marginLeft: "-=20"
-      }, 250, function ()
-        {
-          setTimeout(customTagline, 5000);
-        });
-    });
-  };
-  setTimeout(customTagline, 5000);
+  ],
+  tagline = taglines[Math.floor(Math.random()*taglines.length)];
+  document.getElementById('tagline').innerText = tagline;
 </script>
