@@ -466,7 +466,6 @@ div.alert-danger {
   }
 
 #bitmap-converter {
-  .left13 { color: var(--color-bitmap); }
   label:hover { color: var(--color-bitmap-label-hover); }
   #preview-lg { border-color: var(--color-bitmap-preview-lg); }
   #preview-sm { border-color: var(--color-bitmap-preview-sm); }
@@ -1135,9 +1134,6 @@ div.container.gcode {
 }
 #bitmap-converter {
   margin-top: 0.5em;
-
-  .left13 { float: left; width: 33.3%; }
-  .right23 { padding-top: 0.5em; float: left; width: 66.7%; }
 
   p { font-size: 120%; }
   canvas {
