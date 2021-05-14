@@ -966,8 +966,9 @@ $(window).load(() => {
   // Get localStorage data
   var lsSettings = window.localStorage.getItem('LIN_SETTINGS');
 
-  if (lsSettings !== undefined) {
+  if (lsSettings != undefined) {
     var settings = jQuery.parseJSON(lsSettings);
+    console.log(settings['Version'])
     if (!settings['Version'] || settings['Version'] != SETTINGS_VERSION) {
       window.localStorage.removeItem('LIN_SETTINGS');
       alert('Script settings have been updated. Saved settings are reset to default values');
