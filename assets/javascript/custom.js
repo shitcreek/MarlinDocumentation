@@ -26,14 +26,9 @@ function getCookie(cname) {
 // Set Lighting according to cookie or time
 
 function setDarkMode(dark) {
-  console.log((dark ? "Setting" :  "Clearing") + " dark mode.");
-  var $b = $('body'), q = '/assets/images/';
-  if (dark) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  }
-  else {
-    document.documentElement.removeAttribute("data-theme");
-  }
+  //console.log((dark ? "Set" :  "Clear") + " dark mode.");
+  var $t = $('html'), q = '/assets/images/';
+  dark ? $t.attr('data-theme', 'dark') : $t.removeAttr('data-theme');
   $('#daynite')
     .attr('src', q + 'btn-' + (dark ? 'day' : 'night') + '.svg')
     .css('visibility', 'visible');
