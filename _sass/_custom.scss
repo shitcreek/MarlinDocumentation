@@ -1377,6 +1377,13 @@ footer>.container { display: block; clear: both; width: 100%}
   #search.container .overlay { width: 1170px; }
   .navbar-nav>li>a { padding-left: 12px; padding-right: 12px; line-height: inherit;}
   .tocify.gcode, .custom-fixed-sidebar .tocify { width: 292px; }
+  footer>.container { width: ($screen-lg-min - 30 - 20); padding-left: 312px; }
+}
+
+@media (max-width: $screen-sm-min) {
+  li#searchbox input[type="search"] { width: 10em !important; }
+  .tocify.gcode, .custom-fixed-sidebar .tocify { width: 324px; }
+  footer>.container { width: 100%; padding-left: 0; }
 }
 // Fix headings in panels
 div.panel.panel-info, div.panel.panel-warning {
